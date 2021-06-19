@@ -1,0 +1,193 @@
+/* GLOBAL */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    background: #084097;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* etiqueta */
+
+p {
+    color: #ad9797;
+}
+
+
+
+/* class & id */
+
+/* logo */
+
+.logo .conteImg > img {
+    width: 95%;
+}
+
+
+/* header */
+
+.contenedorGeneral {
+    width: 100%;
+    max-width: 25.875rem;
+    min-width: 20rem;
+    height: auto;
+    margin-top: 1.875rem;
+    position: absolute;
+    display: grid;
+    grid-row: 1fr 1fr;
+    grid-template-areas:   
+     "header"
+     "body";
+
+}
+
+.conteinerLogin { 
+    background: #fff;
+    display: grid;
+}
+
+.conteinerText {
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    font-size: 1.5625rem;
+}
+
+/* body */
+
+.conteinerColor {
+    background: #028edc;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    
+}
+
+.tituloLogin {
+    color: #0077ff;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.subLogin,  p{
+    text-align: justify;
+    padding: 5px 15px 5px 15px;
+}
+
+.subLogin2,  p{
+    text-align: justify;
+    padding: 5px 15px 5px 15px;
+}
+
+
+/* input, boton, link */
+
+#banner {
+    margin: 5px 15px 5px 15px;
+    padding:  5px 0 5px 10px;
+    background: rgb(243, 240, 240);
+    border: none;
+    border-bottom: 1px solid #0082fe;
+    font-size: 20px;
+}
+
+#contraseña {
+    margin: 10px 15px 5px 15px;
+    padding:  5px 0 5px 10px;
+    background: rgb(243, 240, 240);
+    border: none;
+    border-bottom: 1px solid #0082fe;
+    font-size: 20px;
+}
+
+#boton {
+    background: #0077ff;
+    color: #fff;
+    font-size: 20px;
+    font-weight:bold;
+    border: none;
+    width: 200px;
+    border-radius: 25px;
+    padding: 10px 5px 5px 5px;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+#boton:active {
+    background: #016de7;
+}
+
+.conteinerSubmit {
+    margin-top: 10px;
+}
+
+.link {
+    display: inline-block;
+    font-size: 19px;
+    width: 50%;
+    padding: 20px 5px 5px 5px;
+    color: #ad9797;
+}
+
+
+@media  screen and (min-height: 568px) {
+    
+    .logo .conteImg > img {
+        width: 80%;
+    }
+
+    .contenedorGeneral {
+        margin-top: 5px;
+    }
+    
+}
+
+@media  screen and (min-height: 569px) {
+    
+    .logo .conteImg > img {
+        width: 95%;
+    }
+
+    .contenedorGeneral {
+        margin-top: 1.875rem;
+    }
+    
+}
+
+@media  screen and (min-height: 1024px) {
+
+    p, h1,  h2 {
+        font-size: 30px;
+    }
+    
+    .logo .conteImg > img {
+        width: 95%;
+    }
+
+    .contenedorGeneral {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    #banner, #contraseña {
+        font-size: 50px;
+    }
+
+    #boton {
+        font-size: 30px;
+    }
+
+    .link {
+        font-size: 35px;
+    }
+    
+}
+
+
